@@ -149,6 +149,35 @@
 
           <!-- Changelog Card -->
           <div class="col-md-6">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h6 class="mb-0">v0.4.5</h6>
+                <span class="badge bg-primary">Jan 2026</span>
+              </div>
+
+              <p class="text-muted small">Major Feature & Structure Update</p>
+
+              <ul class="mb-0">
+                <li>Separated routing structure for guest, user, and admin roles</li>
+                <li>Implemented dedicated admin dashboard using <code>x-admin-layout</code> with custom UI</li>
+                <li>Added admin statistics for total books sold and total revenue (based on purchases table)</li>
+                <li>Created admin user management page displaying name, email, address, and total books purchased</li>
+                <li>Added admin feature to manually verify user email accounts</li>
+                <li>Enabled guest access to book detail pages without authentication</li>
+                <li>Implemented WhatsApp checkout message with dynamic book, user name, and address</li>
+                <li>Added login validation for WhatsApp checkout to record purchase history</li>
+                <li>Extended user profile with editable address field (textarea)</li>
+                <li>Updated profile controller, validation request, and database schema for address support</li>
+                <li>Resolved controller namespace conflict causing duplicate class declaration error</li>
+                <li>Improved overall project structure and maintainability</li>
+              </ul>
+            </div>
+          </div>
+        </div> 
+
+
+          <div class="col-md-6">
             <div class="card h-100 shadow-sm">
               <div class="card-body">
                 <div class="d-flex justify-content-between align-items-center mb-2">
