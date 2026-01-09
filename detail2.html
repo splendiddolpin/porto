@@ -73,9 +73,9 @@
     <div class="mt-4">
       <p class="mb-1">Overall Progress</p>
       <div class="progress">
-        <div class="progress-bar bg-warning" style="width: 80%"></div>
+        <div class="progress-bar bg-warning" style="width: 90%"></div>
       </div>
-      <small class="text-white-50">80% completed</small>
+      <small class="text-white-50">90% completed</small>
     </div>
   </div>
 </section>
@@ -138,6 +138,35 @@
         <div class="row g-4">
 
           <!-- Changelog Card -->
+          <div class="col-md-6">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h6 class="mb-0">v0.4.0</h6>
+                <span class="badge bg-primary">Jan 2026</span>
+              </div>
+
+              <p class="text-muted small">Flask Prediction Logic, UI Stability & Environment Fixes</p>
+
+              <ul class="mb-0">
+                <li>Refactored Flask prediction pipeline to strictly follow trained model column structure</li>
+                <li>Diagnosed and resolved <code>Index(['Location'], dtype='object')</code> issue caused by double encoding</li>
+                <li>Removed location dropdown dependency to handle large-scale location data more efficiently</li>
+                <li>Adjusted DataFrame creation to align with <code>model_columns.pkl</code> schema</li>
+                <li>Ensured numeric inputs are injected correctly without breaking model inference</li>
+                <li>Improved form handling logic to prevent invalid input crashes</li>
+                <li>Stabilized Flask app startup after environment & interpreter mismatch issues</li>
+                <li>Identified and handled <code>InconsistentVersionWarning</code> from scikit-learn model loading</li>
+                <li>Verified Flask app execution path and ensured <code>app.run()</code> is triggered correctly</li>
+                <li>Improved debugging flow for silent Flask startup failures on Windows</li>
+                <li>Prepared codebase for Python & library version normalization</li>
+                <li>Improved overall reliability of prediction workflow and development environment</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
           <div class="col-md-6">
             <div class="card h-100 shadow-sm">
               <div class="card-body">
