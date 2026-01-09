@@ -152,6 +152,36 @@
           <div class="card h-100 shadow-sm">
             <div class="card-body">
               <div class="d-flex justify-content-between align-items-center mb-2">
+                <h6 class="mb-0">v0.4.6</h6>
+                <span class="badge bg-primary">Jan 2026</span>
+              </div>
+
+              <p class="text-muted small">Admin Book Management & Media Handling Update</p>
+
+              <ul class="mb-0">
+                <li>Implemented cover image upload for books using Intervention Image (Laravel-compatible)</li>
+                <li>Added automatic image resizing (600px width) and WebP compression to reduce server load</li>
+                <li>Integrated secure storage handling with <code>storage/public</code> and cleanup on update/delete</li>
+                <li>Added default book cover fallback using model accessor (<code>getCoverUrlAttribute</code>)</li>
+                <li>Enhanced admin create & edit forms with image upload support</li>
+                <li>Displayed existing book cover preview on edit page</li>
+                <li>Added book description field to create & update workflows</li>
+                <li>Resolved price overflow error by aligning input values with database column limits</li>
+                <li>Fixed missing required <code>category</code> field causing SQL insert failure</li>
+                <li>Improved validation rules for book data consistency and security</li>
+                <li>Ensured admin routes remain protected with auth, verification, and role middleware</li>
+                <li>Improved overall admin UX and data integrity for book management</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+
+          <div class="col-md-6">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-2">
                 <h6 class="mb-0">v0.4.5</h6>
                 <span class="badge bg-primary">Jan 2026</span>
               </div>
