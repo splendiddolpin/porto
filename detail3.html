@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,140 +17,119 @@
     body {
       background-color: #f8f9fa;
     }
+
     .hero {
       background: linear-gradient(135deg, #0d6efd, #5aa9ff);
       color: white;
       padding: 100px 0;
     }
+
     .hero-img {
       width: 160px;
       height: 160px;
       object-fit: cover;
       border-radius: 50%;
-      border: 5px solid rgba(255,255,255,0.4);
+      border: 5px solid rgba(255, 255, 255, 0.4);
       margin-bottom: 20px;
     }
+
     .badge-status {
-      background-color: rgba(255,255,255,0.2);
-      border: 1px solid rgba(255,255,255,0.4);
+      background-color: rgba(255, 255, 255, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0.4);
     }
+
     .progress {
       height: 8px;
       border-radius: 10px;
     }
+
     .section-title {
       font-weight: 600;
       margin-bottom: 20px;
     }
   </style>
 </head>
+
 <body>
 
-<!-- HERO SECTION -->
-<section class="hero">
-  <div class="container" data-aos="fade-up">
-    <span class="badge badge-status mb-3">ONGOING PROJECT</span>
-    <h1 class="mt-3">PERSONAL PORTFOLIO</h1>
-    <p class="lead">A personal portfolio website showcasing my projects, skills, and ongoing projects</p>
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="container" data-aos="fade-up">
+      <span class="badge badge-status mb-3">ONGOING PROJECT</span>
+      <h1 class="mt-3">PERSONAL PORTFOLIO</h1>
+      <p class="lead">A personal portfolio website showcasing my projects, skills, and ongoing projects</p>
 
-    <div class="mt-4">
-      <p class="mb-1">Overall Progress</p>
-      <div class="progress">
-        <div class="progress-bar bg-warning" style="width: 80%"></div>
-      </div>
-      <small class="text-white-50">80% completed</small>
-    </div>
-  </div>
-</section>
-
-<!-- ABOUT PROJECT -->
-<section class="py-5">
-  <div class="container">
-    <div class="row g-4">
-
-      <div class="col-lg-8" data-aos="fade-right">
-        <h3 class="section-title">Portfolio Overview</h3>
-        <p>
-          This website is my personal portfolio, designed to present my profile, skills, and projects
-          in a clean and professional manner. It has been continuously improved to better highlight
-          my ongoing work, especially an online book marketplace project.
-        </p>
-        <p>
-          Recent updates include adding a dedicated <strong>Ongoing Project</strong> section,
-          updating the main profile photo on the homepage, and improving the overall visual consistency
-          and user experience across all sections.
-        </p>
-
-        <h5 class="mt-4">Tech Stack</h5>
-        <ul>
-          <li>Just simple php and html</li>
-          <li>No database website</li>
-          <li>Bootstrap 5</li>
-        </ul>
-
-        <h5 class="mt-4">Current Focus</h5>
-        <ul>
-          <li>Improving personal branding and UI consistency</li>
-          <li>Highlighting ongoing projects more clearly</li>
-          <li>Integrating detailed project pages</li>
-          <li>Enhancing performance and responsiveness</li>
-        </ul>
-      </div>
-
-      <div class="col-lg-4" data-aos="fade-left">
-        <div class="card shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title">Project Information</h5>
-            <hr>
-            <p><strong>Website Type:</strong> Personal Portfolio</p>
-            <p><strong>Owner:</strong> Personal Project</p>
-            <p><strong>Status:</strong> Actively Maintained</p>
-            <p><strong>Main Purpose:</strong> Showcase skills & projects</p>
-            <p><strong>Featured Ongoing Project:</strong> Online Book Marketplace</p>
-            <p><strong>Main Tech:</strong> Laravel, Bootstrap</p>
-            <p><strong>Last Design Update:</strong> February 2026</p>
-          </div>
+      <div class="mt-4">
+        <p class="mb-1">Overall Progress</p>
+        <div class="progress">
+          <div class="progress-bar bg-warning" style="width: 80%"></div>
         </div>
+        <small class="text-white-50">80% completed</small>
       </div>
-
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- CHANGE LOG -->
-<section class="py-5">
-  <div class="container">
-    <h3 class="section-title text-center" data-aos="fade-up">Portfolio Change Log</h3>
-    <div class="row g-4 mt-3">
+  <!-- ABOUT PROJECT -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4">
 
-      <div class="col-md-6">
-      <div class="card h-100 shadow-sm">
-        <div class="card-body">
-          <div class="d-flex justify-content-between align-items-center mb-2">
-            <h6 class="mb-0">v0.6.5</h6>
-            <span class="badge bg-primary">Jan 2026</span>
-          </div>
+        <div class="col-lg-8" data-aos="fade-right">
+          <h3 class="section-title">Portfolio Overview</h3>
+          <p>
+            This website is my personal portfolio, designed to present my profile, skills, and projects
+            in a clean and professional manner. It has been continuously improved to better highlight
+            my ongoing work, especially an online book marketplace project.
+          </p>
+          <p>
+            Recent updates include adding a dedicated <strong>Ongoing Project</strong> section,
+            updating the main profile photo on the homepage, and improving the overall visual consistency
+            and user experience across all sections.
+          </p>
 
-          <p class="text-muted small">Portfolio Navigation & Project Enhancement Update</p>
+          <h5 class="mt-4">Tech Stack</h5>
+          <ul>
+            <li>Just simple php and html</li>
+            <li>No database website</li>
+            <li>Bootstrap 5</li>
+          </ul>
 
-          <ul class="mb-0">
-            <li>Improved sidebar navigation behavior for better responsiveness on mobile devices</li>
-            <li>Fixed navbar toggle issue where sidebar content was not visible on small screens</li>
-            <li>Enhanced visual clarity of project details on project detail pages</li>
-            <li>Improved layout spacing and typography in project view for better readability</li>
-            <li>Added clickable links (<code>href</code>) to Instagram and LinkedIn icons in the navbar</li>
-            <li>Improved accessibility and usability of social media icons</li>
-            <li>Added new project: <strong>Weather Prediction Web App (Flask)</strong></li>
-            <li>Included project description and category for the Weather Prediction project</li>
-            <li>Ensured consistent design across all project cards and detail views</li>
-            <li>Minor UI refinements and cleanup for overall portfolio consistency</li>
+          <h5 class="mt-4">Current Focus</h5>
+          <ul>
+            <li>Improving personal branding and UI consistency</li>
+            <li>Highlighting ongoing projects more clearly</li>
+            <li>Integrating detailed project pages</li>
+            <li>Enhancing performance and responsiveness</li>
           </ul>
         </div>
+
+        <div class="col-lg-4" data-aos="fade-left">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Project Information</h5>
+              <hr>
+              <p><strong>Website Type:</strong> Personal Portfolio</p>
+              <p><strong>Owner:</strong> Personal Project</p>
+              <p><strong>Status:</strong> Actively Maintained</p>
+              <p><strong>Main Purpose:</strong> Showcase skills & projects</p>
+              <p><strong>Featured Ongoing Project:</strong> Online Book Marketplace</p>
+              <p><strong>Main Tech:</strong> Laravel, Bootstrap</p>
+              <p><strong>Last Design Update:</strong> February 2026</p>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
+  </section>
 
+  <!-- CHANGE LOG -->
+  <section class="py-5">
+    <div class="container">
+      <h3 class="section-title text-center" data-aos="fade-up">Portfolio Change Log</h3>
+      <div class="row g-4 mt-3">
 
-       <div class="col-md-6">
+        <div class="col-md-6">
         <div class="card h-100 shadow-sm">
           <div class="card-body">
             <div class="d-flex justify-content-between align-items-center mb-2">
@@ -157,140 +137,191 @@
               <span class="badge bg-primary">Jan 2026</span>
             </div>
 
-            <p class="text-muted small">News Feature & Sidebar Enhancement</p>
+            <p class="text-muted small">Navbar Refinement, Project Visibility & Reusability Update</p>
 
             <ul class="mb-0">
-              <li>Implemented "News" section in sidebar with clickable updates</li>
-              <li>Added dynamic listing of recent changelogs and project highlights</li>
-              <li>Ensured responsive display for mobile and desktop views</li>
-              <li>Enhanced toggle functionality for sidebar menu on mobile devices</li>
-              <li>Styled scrollbar and news items for better visibility and UX</li>
-              <li>Linked news items to respective detail pages for full changelog viewing</li>
-              <li>Improved visual hierarchy with icons and badge highlights for months</li>
-              <li>Adjusted sidebar z-index and padding for proper overlap with main content</li>
-              <li>Minor performance optimizations for rendering sidebar content</li>
+              <li>Refined sidebar navbar layout to improve usability and visual consistency</li>
+              <li>Fixed mobile navbar toggle issue where sidebar content did not appear correctly</li>
+              <li>Enhanced spacing and typography for better readability of project information</li>
+              <li>Reduced code duplication by centralizing sidebar navigation structure</li>
+              <li>Minor UI cleanup and consistency adjustments across portfolio pages</li>
             </ul>
           </div>
         </div>
       </div>
 
-      <div class="col-md-6">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body">
-            <div class="d-flex justify-content-between align-items-center mb-2">
-              <h6 class="mb-0">v0.6.0</h6>
-              <span class="badge bg-primary">Jan 2026</span>
+        <div class="col-md-6">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h6 class="mb-0">v0.6.5</h6>
+                <span class="badge bg-primary">Jan 2026</span>
+              </div>
+
+              <p class="text-muted small">Portfolio Navigation & Project Enhancement Update</p>
+
+              <ul class="mb-0">
+                <li>Improved sidebar navigation behavior for better responsiveness on mobile devices</li>
+                <li>Fixed navbar toggle issue where sidebar content was not visible on small screens</li>
+                <li>Enhanced visual clarity of project details on project detail pages</li>
+                <li>Improved layout spacing and typography in project view for better readability</li>
+                <li>Added clickable links (<code>href</code>) to Instagram and LinkedIn icons in the navbar</li>
+                <li>Improved accessibility and usability of social media icons</li>
+                <li>Added new project: <strong>Weather Prediction Web App (Flask)</strong></li>
+                <li>Included project description and category for the Weather Prediction project</li>
+                <li>Ensured consistent design across all project cards and detail views</li>
+                <li>Minor UI refinements and cleanup for overall portfolio consistency</li>
+              </ul>
             </div>
-
-            <p class="text-muted small">News Feature & Sidebar Enhancement</p>
-
-            <ul class="mb-0">
-              <li>Implemented "News" section in sidebar with clickable updates</li>
-              <li>Added dynamic listing of recent changelogs and project highlights</li>
-              <li>Ensured responsive display for mobile and desktop views</li>
-              <li>Enhanced toggle functionality for sidebar menu on mobile devices</li>
-              <li>Styled scrollbar and news items for better visibility and UX</li>
-              <li>Linked news items to respective detail pages for full changelog viewing</li>
-              <li>Improved visual hierarchy with icons and badge highlights for months</li>
-              <li>Adjusted sidebar z-index and padding for proper overlap with main content</li>
-              <li>Minor performance optimizations for rendering sidebar content</li>
-            </ul>
           </div>
         </div>
-      </div>
 
-      <div class="col-md-6">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body">
-            <div class="d-flex justify-content-between">
-              <strong>v0.5.0</strong>
-              <span class="badge bg-primary">Jan 2026</span>
+
+        <div class="col-md-6">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h6 class="mb-0">v0.6.5</h6>
+                <span class="badge bg-primary">Jan 2026</span>
+              </div>
+
+              <p class="text-muted small">News Feature & Sidebar Enhancement</p>
+
+              <ul class="mb-0">
+                <li>Implemented "News" section in sidebar with clickable updates</li>
+                <li>Added dynamic listing of recent changelogs and project highlights</li>
+                <li>Ensured responsive display for mobile and desktop views</li>
+                <li>Enhanced toggle functionality for sidebar menu on mobile devices</li>
+                <li>Styled scrollbar and news items for better visibility and UX</li>
+                <li>Linked news items to respective detail pages for full changelog viewing</li>
+                <li>Improved visual hierarchy with icons and badge highlights for months</li>
+                <li>Adjusted sidebar z-index and padding for proper overlap with main content</li>
+                <li>Minor performance optimizations for rendering sidebar content</li>
+              </ul>
             </div>
-            <ul class="mt-2">
-              <li>Improved UI consistency across pages</li>
-              <li>Refined WhatsApp checkout message</li>
-              <li>Performance optimization</li>
-            </ul>
           </div>
         </div>
-      </div>
 
-      <div class="col-md-6">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body">
-            <div class="d-flex justify-content-between">
-              <strong>v0.4.0</strong>
-              <span class="badge bg-primary">Jan 2026</span>
+        <div class="col-md-6">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <h6 class="mb-0">v0.6.0</h6>
+                <span class="badge bg-primary">Jan 2026</span>
+              </div>
+
+              <p class="text-muted small">News Feature & Sidebar Enhancement</p>
+
+              <ul class="mb-0">
+                <li>Implemented "News" section in sidebar with clickable updates</li>
+                <li>Added dynamic listing of recent changelogs and project highlights</li>
+                <li>Ensured responsive display for mobile and desktop views</li>
+                <li>Enhanced toggle functionality for sidebar menu on mobile devices</li>
+                <li>Styled scrollbar and news items for better visibility and UX</li>
+                <li>Linked news items to respective detail pages for full changelog viewing</li>
+                <li>Improved visual hierarchy with icons and badge highlights for months</li>
+                <li>Adjusted sidebar z-index and padding for proper overlap with main content</li>
+                <li>Minor performance optimizations for rendering sidebar content</li>
+              </ul>
             </div>
-            <ul class="mt-2">
-              <li>Added admin dashboard</li>
-              <li>Book CRUD improvements</li>
-              <li>Database indexing</li>
-            </ul>
           </div>
         </div>
-      </div>
 
-      <div class="col-md-6">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body">
-            <div class="d-flex justify-content-between">
-              <strong>v0.3.0</strong>
-              <span class="badge bg-primary">Jan 2026</span>
+        <div class="col-md-6">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <strong>v0.5.0</strong>
+                <span class="badge bg-primary">Jan 2026</span>
+              </div>
+              <ul class="mt-2">
+                <li>Improved UI consistency across pages</li>
+                <li>Refined WhatsApp checkout message</li>
+                <li>Performance optimization</li>
+              </ul>
             </div>
-            <ul class="mt-2">
-              <li>WhatsApp checkout integration</li>
-              <li>Improved book detail page</li>
-              <li>Query optimization</li>
-            </ul>
           </div>
         </div>
-      </div>
 
-      <div class="col-md-6">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body">
-            <div class="d-flex justify-content-between">
-              <strong>v0.2.0</strong>
-              <span class="badge bg-secondary">Dec 2025</span>
+        <div class="col-md-6">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <strong>v0.4.0</strong>
+                <span class="badge bg-primary">Jan 2026</span>
+              </div>
+              <ul class="mt-2">
+                <li>Added admin dashboard</li>
+                <li>Book CRUD improvements</li>
+                <li>Database indexing</li>
+              </ul>
             </div>
-            <ul class="mt-2">
-              <li>Book listing & category system</li>
-              <li>Responsive layout</li>
-            </ul>
           </div>
         </div>
-      </div>
 
-      <div class="col-md-6">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body">
-            <div class="d-flex justify-content-between">
-              <strong>v0.1.0</strong>
-              <span class="badge bg-dark">Dec 2025</span>
+        <div class="col-md-6">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <strong>v0.3.0</strong>
+                <span class="badge bg-primary">Jan 2026</span>
+              </div>
+              <ul class="mt-2">
+                <li>WhatsApp checkout integration</li>
+                <li>Improved book detail page</li>
+                <li>Query optimization</li>
+              </ul>
             </div>
-            <ul class="mt-2">
-              <li>Laravel project setup</li>
-              <li>Database schema design</li>
-              <li>Laragon environment configuration</li>
-            </ul>
           </div>
         </div>
-      </div>
 
+        <div class="col-md-6">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <strong>v0.2.0</strong>
+                <span class="badge bg-secondary">Dec 2025</span>
+              </div>
+              <ul class="mt-2">
+                <li>Book listing & category system</li>
+                <li>Responsive layout</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <strong>v0.1.0</strong>
+                <span class="badge bg-dark">Dec 2025</span>
+              </div>
+              <ul class="mt-2">
+                <li>Laravel project setup</li>
+                <li>Database schema design</li>
+                <li>Laragon environment configuration</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- FOOTER -->
-<footer class="py-4 text-center text-muted">
-  <small>© 2026 Personal Portfolio Project</small>
-</footer>
+  <!-- FOOTER -->
+  <footer class="py-4 text-center text-muted">
+    <small>© 2026 Personal Portfolio Project</small>
+  </footer>
 
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init({ once: true });
-</script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true
+    });
+  </script>
 
 </body>
+
 </html>

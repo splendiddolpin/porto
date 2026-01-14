@@ -152,6 +152,40 @@
           <div class="card h-100 shadow-sm">
             <div class="card-body">
               <div class="d-flex justify-content-between align-items-center mb-2">
+                <h6 class="mb-0">v0.6.0</h6>
+                <span class="badge bg-primary">Jan 2026</span>
+              </div>
+
+              <p class="text-muted small">
+                Role Access Control, UX Optimization & Mobile-Friendly Design Update
+              </p>
+
+              <ul class="mb-0">
+                <li>Identified access control issue where admin users could access guest/user pages (<code>/</code>) causing infinite redirect errors</li>
+                <li>Resolved redirect loop (<code>ERR_TOO_MANY_REDIRECTS</code>) by restructuring middleware usage and removing improper admin redirects</li>
+                <li>Implemented clear role separation to ensure admin users are redirected to admin dashboard instead of user/guest pages</li>
+                <li>Ensured user routes remain protected using <code>auth</code>, <code>verified</code>, and <code>role:user</code> middleware</li>
+                <li>Refined guest access logic so only unauthenticated users or standard users can access landing and guest book pages</li>
+                <li>Added efficient pagination (9 books per page) using Laravel paginator to prevent heavy database queries</li>
+                <li>Separated preview book data from paginated collections to prevent unintended UI changes during pagination</li>
+                <li>Integrated AJAX-based pagination to prevent full page reload and maintain browsing state</li>
+                <li>Migrated frontend interaction logic to Alpine.js for cleaner state management and improved maintainability</li>
+                <li>Implemented live search and filtering (search, category, favorites) with debounce to reduce server load</li>
+                <li>Synchronized URL parameters with live filters to allow refresh and shareable links</li>
+                <li>Redesigned sidebar filter UI with improved visual hierarchy and mobile usability</li>
+                <li>Optimized hero and book preview sections for mobile devices using stacked layout and horizontal scroll</li>
+                <li>Adjusted typography, spacing, and button sizing to ensure thumb-friendly interactions on small screens</li>
+                <li>Improved overall UX consistency across desktop and mobile without altering core backend logic</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+          <div class="col-md-6">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-2">
                 <h6 class="mb-0">v0.5.0</h6>
                 <span class="badge bg-primary">Jan 2026</span>
               </div>

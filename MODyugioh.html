@@ -39,61 +39,15 @@
 <body class="portfolio-details-page">
 
   <header id="header" class="header dark-background d-flex flex-column">
-
-    <i class="header-toggle d-xl-none bi bi-list"></i>
-
-    <div class="profile-img">
-      <img src="assets/img/porto1.jpg" alt="" class="img-fluid rounded-circle">
+    <div id="navbar-placeholder"></div>
+    <script>
+      fetch("partials/navbar.html")
+        .then(res => res.text())
+        .then(data => {
+          document.getElementById("navbar-placeholder").innerHTML = data;
+        });
+    </script>
     </div>
-
-    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
-      <h1 class="sitename">Bagaskara Rifky</h1>
-    </a>
-
-    <div class="social-links text-center">
-      <a href="https://www.instagram.com/splendiddolpin/" class="instagram"><i class="bi bi-instagram"></i></a>
-      <a href="https://id.linkedin.com/in/bagaskara-rifky-widianto-a050a0373" class="linkedin"><i class="bi bi-linkedin"></i></a>
-    </div>
-
-    <nav id="navmenu" class="navmenu">
-      <ul>
-        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
-        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
-        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
-        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
-      </ul>
-    </nav>
-
-    <!-- NEWS SECTION -->
-    <div class="sidebar-news mt-auto px-3 pb-4">
-      <h6 class="text-uppercase text-white-50 mb-2">
-        <i class="bi bi-megaphone me-1"></i> News
-      </h6>
-
-      <a href="detail.html" class="news-item d-block mb-2">
-        <small class="text-white-50 d-block">Jan 2026</small>
-        <span class="text-white small">
-          New Changelog 0.5.0 for Ongoing Project Bookstore
-        </span>
-      </a>
-
-      <a href="WeatherPred.html" class="news-item d-block mb-2">
-        <small class="text-white-50 d-block">Jan 2026</small>
-        <span class="text-white small">
-          LAUNCHING PROJECT ! MAchine Learning Weather Prediction
-        </span>
-      </a>
-
-      <a href="detail3.html" class="news-item d-block">
-        <small class="text-white-50 d-block">Jan 2026</small>
-        <span class="text-white small">
-          New Feature For Portfolio "News"
-        </span>
-      </a>
-    </div>
-    <!-- END NEWS -->
-
   </header>
 
   <main class="main">
