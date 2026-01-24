@@ -152,6 +152,40 @@
           <div class="card h-100 shadow-sm">
             <div class="card-body">
               <div class="d-flex justify-content-between align-items-center mb-2">
+                <h6 class="mb-0">v0.6.5</h6>
+                <span class="badge bg-primary">Jan 2026</span>
+              </div>
+
+              <p class="text-muted small">
+                Purchase Flow Implementation, Invoice System & UX Stabilization
+              </p>
+
+              <ul class="mb-0">
+                <li>Identified and resolved role access issue where admin users could access guest/user pages, causing incorrect behavior and redirect conflicts</li>
+                <li>Stabilized role-based routing logic to ensure admins are restricted to admin routes while users access user-specific pages only</li>
+                <li>Designed and implemented a structured purchase flow using WhatsApp as the checkout gateway</li>
+                <li>Automatically recorded purchase data when users initiate a purchase, setting initial status as <code>unpaid</code></li>
+                <li>Implemented prevention logic to stop users from creating duplicate purchases for the same book while an <code>unpaid</code> record exists</li>
+                <li>Added a dedicated Purchase History page for users with clean, readable table layout</li>
+                <li>Displayed real-time purchase status badges (<code>unpaid</code> / <code>paid</code>) for clear transaction tracking</li>
+                <li>Added “Continue via WhatsApp” action for unpaid purchases to resume payment without creating new records</li>
+                <li>Implemented secure PDF invoice generation for completed (paid) purchases using DomPDF</li>
+                <li>Restricted invoice access so only the purchase owner can download their invoice</li>
+                <li>Ensured invoice generation is blocked for unpaid purchases to prevent misuse</li>
+                <li>Cleaned up unnecessary UI elements on purchase pages to keep focus on transaction status and actions</li>
+                <li>Improved overall purchase UX by guiding users through a clear unpaid → paid → invoice flow</li>
+                <li>Maintained lightweight database usage by avoiding redundant writes and ensuring proper query scoping</li>
+                <li>Prepared the system structure for future admin-side payment approval and reporting features</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+          <div class="col-md-6">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-2">
                 <h6 class="mb-0">v0.6.0</h6>
                 <span class="badge bg-primary">Jan 2026</span>
               </div>
