@@ -149,6 +149,42 @@
 
           <!-- Changelog Card -->
           <div class="col-md-6">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <h6 class="mb-0">v0.7.0</h6>
+                  <span class="badge bg-primary">Jan 2026</span>
+                </div>
+
+                <p class="text-muted small">
+                  Purchase System Finalization, Favorite Stability & Frontend Architecture Fix
+                </p>
+
+                <ul class="mb-0">
+                  <li>Completed end-to-end user purchase flow using WhatsApp as checkout entry point with automatic purchase record creation</li>
+                  <li>Set default purchase status to <code>unpaid</code> when user initiates a purchase to ensure clear transaction tracking</li>
+                  <li>Implemented safeguard logic to prevent users from creating duplicate purchases for the same book while an <code>unpaid</code> record exists</li>
+                  <li>Added user purchase history page with clean, readable layout focused on essential transaction data</li>
+                  <li>Separated purchase actions based on status, allowing users to continue payment only for <code>unpaid</code> purchases</li>
+                  <li>Implemented PDF invoice generation for completed (<code>paid</code>) purchases using DomPDF</li>
+                  <li>Restricted invoice access to purchase owners only and blocked invoice download for unpaid transactions</li>
+                  <li>Refined invoice layout to resemble a professional invoice with book details and cover handling logic</li>
+                  <li>Identified and resolved JavaScript event binding issues causing favorite button to fail after dynamic content updates</li>
+                  <li>Refactored favorite feature to use event delegation, ensuring stability across pagination, AJAX loads, and Blade partials</li>
+                  <li>Fixed interaction conflict between full-card clickable links and action buttons (favorite) within book grid</li>
+                  <li>Stabilized favorite toggle behavior with real-time UI updates without page reload</li>
+                  <li>Ensured CSRF-safe AJAX requests for favorite actions with proper JSON responses</li>
+                  <li>Improved overall frontend architecture by decoupling JS logic from static DOM load assumptions</li>
+                  <li>Reduced risk of database flooding by enforcing logical purchase and favorite constraints at application level</li>
+                  <li>Prepared backend and UI structure for next phase: admin-side payment approval and purchase management</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+
+    
+          <div class="col-md-6">
           <div class="card h-100 shadow-sm">
             <div class="card-body">
               <div class="d-flex justify-content-between align-items-center mb-2">
