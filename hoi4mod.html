@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Project Details</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Updated: Jun 29 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+    <div id="navbar-placeholder"></div>
+    <script>
+      fetch("partials/navbar.html")
+        .then(res => res.text())
+        .then(data => {
+          document.getElementById("navbar-placeholder").innerHTML = data;
+        });
+    </script>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">Project Details</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Project Details</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper init-swiper">
+
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  }
+                }
+              </script>
+
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="assets/img/hoi4mod/hoi4.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/hoi4mod/hoi41.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/hoi4mod/hoi42.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/hoi4mod/hoi43.png" alt="">
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
+              <h3>Project information</h3>
+              <ul>
+                <li><strong>Category</strong>: Game Modding</li>
+                <li><strong>Title</strong>: HOI 4 Mod</li>
+                <li><strong>Project date</strong>: 20 February, 2026</li>
+                <li><strong>Project URL</strong>: <a href="https://github.com/splendiddolpin/hoi4cheatcombinedmod.git">splendiddolpin/cheatmodcombined.git</a></li>
+                <li><strong>Detail URL</strong>: <a href="hoi4modd.html">Project Details ....</a></li>
+              </ul>
+            </div>
+            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+            <h2>Hearts of Iron IV – Vanilla Helper Mod</h2>
+            <p>
+              A learning-focused mod for <strong>Hearts of Iron IV (Vanilla)</strong> designed to help new players
+              understand core mechanics such as army management, production, construction, and politics.
+            </p>
+            <p>
+              The mod provides optional buffs and event-based tools including army enhancements, production
+              boosts, political modifiers, commander traits, and equipment generation. All features are modular
+              and intended for experimentation and educational gameplay.
+            </p>
+            <p>
+              This project is actively maintained and updated to support the latest game versions, and is
+              included as part of my personal portfolio to showcase game modding and scripting skills.
+            </p>
+          </div>
+            <a href="hoi4modd.html">Project Details ....</a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Details Section -->
+    <section class="py-5">
+  <div class="container">
+    <h3 class="section-title text-center" data-aos="fade-up">
+      Mod Development Change Log
+    </h3>
+
+    <div class="row g-4 mt-3">
+
+    <div class="col-md-6">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <strong>v0.9.5</strong>
+            <span class="badge bg-primary">Jan 2026</span>
+          </div>
+
+           <p class="text-muted small">More Testing and Modifier</p>
+          
+          <ul class="mt-2">
+            <li>Updated mod compatibility to the latest Hearts of Iron IV version</li>
+            <li>Adjusted scripts to match new vanilla mechanics</li>
+            <li>Added more resource modifier</li>
+            <li>Rebalanced political power and stability modifiers</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <strong>v0.9.0</strong>
+            <span class="badge bg-primary">Jan 2026</span>
+          </div>
+
+           <p class="text-muted small">Finalization and testing</p>
+          
+          <ul class="mt-2">
+            <li>Updated mod compatibility to the latest Hearts of Iron IV version</li>
+            <li>Adjusted scripts to match current vanilla mechanics</li>
+            <li>Added new resource: coal</li>
+            <li>Rebalanced political power and stability modifiers</li>
+            <li>Testing in newest version of Hearts of Iron IV</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <strong>v0.9.0</strong>
+            <span class="badge bg-primary">Jan 2026</span>
+          </div>
+
+           <p class="text-muted small">Finalization and testing</p>
+          
+          <ul class="mt-2">
+            <li>Updated mod compatibility to the latest Hearts of Iron IV version</li>
+            <li>Adjusted scripts to match current vanilla mechanics</li>
+            <li>Added new resource: coal</li>
+            <li>Rebalanced political power and stability modifiers</li>
+            <li>Testing in newest version of Hearts of Iron IV</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+      <div class="col-md-6">
+      <div class="card h-100 shadow-sm">  
+        <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <strong>v0.5.0</strong>
+            <span class="badge bg-primary">Jan 2026</span>
+          </div>
+
+           <p class="text-muted small">Event & Buffs Expansion</p>
+          
+          <ul class="mt-2">
+            <li>Updated mod compatibility to the latest Hearts of Iron IV version</li>
+            <li>Adjusted existing scripts to match current vanilla mechanics</li>
+            <li>Added new buffs for army, production, and construction</li>
+            <li>Enhanced political power and stability modifiers</li>
+            <li>Rebalanced modifiers to maintain learning-friendly gameplay</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <h6 class="mb-0">v0.4.0</h6>
+              <span class="badge bg-primary">Jan 2026</span>
+            </div>
+
+            <p class="text-muted small">Event & Commander Expansion</p>
+
+            <ul class="mb-0">
+              <li>Added commander trait injection events</li>
+              <li>Implemented instant equipment & resource events</li>
+              <li>Improved event descriptions for new players</li>
+              <li>Bug fixes for duplicated national spirits</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+              <strong>v0.3.0</strong>
+              <span class="badge bg-primary">Jan 2026</span>
+            </div>
+
+            <p class="text-muted small">Buffs Expansion</p>
+
+            <ul class="mt-2">
+              <li>Army, production, and construction buffs added</li>
+              <li>New political power & stability modifiers</li>
+              <li>Balanced modifier values for learning mode</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+              <strong>v0.2.0</strong>
+              <span class="badge bg-primary">Jan 2026</span>
+            </div>
+            <ul class="mt-2">
+              <li>Decision-based cheat menu system</li>
+              <li>Construction & infrastructure boosts</li>
+              <li>Diplomacy helper modifiers</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+              <strong>v0.1.0</strong>
+              <span class="badge bg-dark">Dec 2025</span>
+            </div>
+            <ul class="mt-2">
+              <li>Initial mod structure setup</li>
+              <li>Basic national spirit buffs</li>
+              <li>Vanilla compatibility testing</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  </main>
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
